@@ -1,67 +1,15 @@
-/* open-sans-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/open-sans-v36-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/open-sans-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/open-sans-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v36-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/open-sans-v36-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 * {
   margin-left: 0;
   margin-right: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Open Sans";
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* header */
@@ -90,6 +38,24 @@ body {
   line-height: 130%; /* 117px */
   letter-spacing: 3.6px;
   text-transform: capitalize;
+}
+
+#backtop {
+  position: fixed;
+  bottom: 50px;
+  right: 90px;
+  background-color: grey;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#backtop a {
+  padding: 20px;
+  display: block;
+}
+
+#backtop .backtop-show {
+  bottom: 50px;
 }
 
 .navbar {
@@ -216,7 +182,7 @@ body {
   font-variant-numeric: lining-nums tabular-nums;
   font-size: 23px;
   font-weight: 700;
-  line-height: 130%; /* 29.9px */
+  line-height: 130%;
   letter-spacing: 0.92px;
   text-transform: capitalize;
 }
@@ -227,7 +193,7 @@ body {
   font-variant-numeric: lining-nums tabular-nums;
   font-size: 48px;
   font-weight: 500;
-  line-height: 130%; /* 62.4px */
+  line-height: 130%;
   letter-spacing: 1.44px;
   text-transform: capitalize;
 }
@@ -251,5 +217,6 @@ body {
   background: #bb2339;
   color: white;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: url("../../assets/images/cursor.png"), auto;
 }

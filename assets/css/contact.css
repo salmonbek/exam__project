@@ -1,75 +1,33 @@
-/* open-sans-300 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/open-sans-v36-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/open-sans-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-500 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/open-sans-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-600 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/open-sans-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-700 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/open-sans-v36-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* open-sans-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../fonts/open-sans-v36-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-body {
-  font-family: "Open Sans";
-}
-
 * {
   margin-left: 0;
   margin-right: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *,
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #backtop {
   position: fixed;
-  background-color: rgb(124, 41, 41);
-  top: 500px;
-  right: 200px;
-  padding: 10px;
+  bottom: 50px;
+  right: 90px;
+  background-color: grey;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#backtop a {
+  padding: 20px;
+  display: block;
+}
+
+#backtop .backtop-show {
+  bottom: 50px;
 }
 
 /* header */
@@ -102,7 +60,7 @@ body {
 
 .navbar {
   -webkit-backdrop-filter: blur(300px);
-  backdrop-filter: blur(300px);
+          backdrop-filter: blur(300px);
   height: 92px;
   background: #bb2339;
 }
@@ -195,7 +153,7 @@ body {
 }
 .btn-contact:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   background: white;

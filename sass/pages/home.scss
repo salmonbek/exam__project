@@ -42,6 +42,25 @@
     }
   }
 }
+// backtop//
+#backtop {
+  position: fixed;
+  bottom: 50px;
+  right: 90px;
+  background-color: grey;
+  border-radius: 50%;
+  transition: 0.5s;
+
+  a {
+    padding: 20px;
+    display: block;
+  }
+}
+#backtop .backtop-show {
+  bottom: 50px;
+}
+
+// backtop//
 
 .navbar {
   height: 92px;
@@ -162,7 +181,7 @@
   font-variant-numeric: lining-nums tabular-nums;
   font-size: 23px;
   font-weight: 700;
-  line-height: 130%; /* 29.9px */
+  line-height: 130%;
   letter-spacing: 0.92px;
   text-transform: capitalize;
 }
@@ -172,7 +191,7 @@
   font-variant-numeric: lining-nums tabular-nums;
   font-size: 48px;
   font-weight: 500;
-  line-height: 130%; /* 62.4px */
+  line-height: 130%;
   letter-spacing: 1.44px;
   text-transform: capitalize;
 }
@@ -195,6 +214,7 @@
     background: #bb2339;
     color: white;
     transform: scale(1.1);
+    cursor: url("../../assets/images/cursor.png"), auto;
   }
 }
 

@@ -11,13 +11,25 @@
 
 //common//
 
+// backtop//
 #backtop {
   position: fixed;
-  background-color: rgb(124, 41, 41);
-  top: 500px;
-  right: 200px;
-  padding: 10px;
+  bottom: 50px;
+  right: 90px;
+  background-color: grey;
+  border-radius: 50%;
+  transition: 0.5s;
+
+  a {
+    padding: 20px;
+    display: block;
+  }
 }
+#backtop .backtop-show {
+  bottom: 50px;
+}
+
+// backtop//
 
 // hero section//
 /* header */
